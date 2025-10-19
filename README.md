@@ -7,7 +7,7 @@ NinjaIoT iot;
 void setup() {
   Serial.begin(115200);
   iot.connect("wifi-name", "wifi-pass", "UIDofIoTPlatform");   // Connect to NinjaIoT platform
-  pinMode(D2, OUTPUT);    // Set D2 as output for LED control
+  pinMode(D2, OUTPUT);    // D2 is my output for LED control
 }
 
 void loop() {
