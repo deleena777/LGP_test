@@ -11,7 +11,7 @@ void setup() {
 }
 
 void loop() {
-  iot.ReadAll();  // Read all values from the cloud
+  iot.ReadAll();  //
 
   int lightValue = iot.GetValue("light");  // Get light sensor value from cloud 
   if (lightValue < 80) {      // this is for adjusting threshold as needed
@@ -20,7 +20,7 @@ void loop() {
     digitalWrite(D2, LOW);     // Turn LED off
   }
 
-:
+:# need to connect to cloud?
   // iot.SyncPWM("D2");
 
   delay(50);   // wait 50 milliseconds
